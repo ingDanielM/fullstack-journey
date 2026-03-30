@@ -16,6 +16,7 @@ My goal is to become a fullstack developer and be employable before the end of 2
 - JS dynamic and weak language
 - strings
 - template strings
+<<<<<<< HEAD
 
 ## Second day : JavaScript Fundamentals
 
@@ -26,3 +27,5 @@ My goal is to become a fullstack developer and be employable before the end of 2
 - ternary operator
 - truthy and falsy
 - nullish coalescing
+=======
+>>>>>>> 408e704be6d3008ead2abfd8a909ce544d1dc9a4

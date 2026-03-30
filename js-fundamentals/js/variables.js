@@ -199,4 +199,7 @@ let serieRating = 10;
 console.log(
   `I would like to watch ${serie} because of its high rating of ${serieRating}`,
 );
+<<<<<<< HEAD
 console.clear();
+=======
+>>>>>>> 408e704be6d3008ead2abfd8a909ce544d1dc9a4
