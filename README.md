@@ -4,6 +4,8 @@ My goal is to become a fullstack developer and be employable before the end of 2
 
 ## First day : JavaScript Fundamentals
 
+### Chapter One - Variables
+
 - variables
 - let vs const
 - comments
@@ -16,9 +18,10 @@ My goal is to become a fullstack developer and be employable before the end of 2
 - JS dynamic and weak language
 - strings
 - template strings
-<<<<<<< HEAD
 
 ## Second day : JavaScript Fundamentals
+
+### Chapter two - Comparisons
 
 - conditionals
 - comparisons operators
@@ -27,5 +30,16 @@ My goal is to become a fullstack developer and be employable before the end of 2
 - ternary operator
 - truthy and falsy
 - nullish coalescing
-=======
->>>>>>> 408e704be6d3008ead2abfd8a909ce544d1dc9a4
+
+### Chapter three - Functions
+
+- functions
+- function hoisting
+- unit tests
+- multiple return values
+- functions as values
+- scope
+- anonymous functions
+- functions default parameters
+- pass by value
+- functions immediate invocation
