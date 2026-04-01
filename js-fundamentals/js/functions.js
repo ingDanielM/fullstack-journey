@@ -154,3 +154,4 @@ console.clear();
 (function greet() {
   console.log("Hello There!");
 })();
+console.clear();

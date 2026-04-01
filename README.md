@@ -43,3 +43,19 @@ My goal is to become a fullstack developer and be employable before the end of 2
 - functions default parameters
 - pass by value
 - functions immediate invocation
+
+### Chapter fourth - Objects
+
+- objects
+- nesting objects
+- optional chaining operator
+- object methods
+- methods mutate
+- strings as keys
+- this
+- arrow functions
+- arrow functions and this
+- spread syntax
+- return objects
+- destructuring
+- no bound
