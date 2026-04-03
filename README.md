@@ -59,3 +59,17 @@ My goal is to become a fullstack developer and be employable before the end of 2
 - return objects
 - destructuring
 - no bound
+
+### Chapter fifth - Classes
+
+- classes
+- private properties
+- static methods
+- getters and setters
+- inheritance
+- super
+
+### Chapter sixth - Prototypes
+
+- prototypes
+- prototype chains

@@ -338,7 +338,7 @@ console.clear();
 // In JavaScript we can only return one value from a function
 // When we want to return multiple values we return an object with those values
 
-function Math(a, b) {
+function Math2(a, b) {
   const max = a > b ? a : b;
   const min = a < b ? a : b;
   const pow = a ** b;
@@ -348,7 +348,7 @@ function Math(a, b) {
   return { max, min, pow, absA, absB };
 }
 
-console.log(Math(-52, -3));
+console.log(Math2(-52, -3));
 
 /**
  * Assignment
