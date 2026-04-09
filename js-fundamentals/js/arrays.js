@@ -172,4 +172,4 @@ console.log(getCleanMessages(inputMessages, "trouble"));
 
 // Slicing arrays ************************************************************************************
 console.clear();
-// 
+// We can slice arrays to divide them into more arrays
