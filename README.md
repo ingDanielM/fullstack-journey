@@ -81,3 +81,12 @@ My goal is to become a fullstack developer and be employable before the end of 2
 - continue
 - while loop
 - for...in loop
+
+### Chapter eighth - Arrays
+
+- array length
+- array spread operator
+- includes method
+- for...of loops
+- slicing arrays
+- destructure

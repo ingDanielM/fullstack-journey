@@ -172,4 +172,90 @@ console.log(getCleanMessages(inputMessages, "trouble"));
 
 // Slicing arrays ************************************************************************************
 console.clear();
-// We can slice arrays to divide them into more arrays
+// We can use the .slice() method to slice and dice arrays
+const fruits = ["apple", "orange", "banana", "pear", "strawberry"];
+console.log(fruits.slice(1, 4)); // this includes from the index 0 to the index 4 - 1
+// prints an array that contains the items from orange to pear of the original fruits array
+
+/**
+ * Assignment
+Sometimes we need to search through Textio's server logs for a specific word. Complete the splitLogs function.
+It searches the logs input for a message containing the slug.
+
+When it finds one, it returns an object with 3 properties:
+
+before: All the logs before the first log containing the slug (non-inclusive)
+after: All the logs after the first log containing the slug (also non-inclusive)
+i: The index of the first log containing the slug
+If not found, just return -1 for the index and empty arrays for before and after.
+
+The .includes() method will be useful.
+ */
+
+function splitLogs(logs, slug) {
+  // ?
+  for (let i = 0; i < logs.length; i++) {
+    if (logs[i].includes(slug))
+      return { before: logs.slice(0, i), after: logs.slice(i + 1), i };
+  }
+  return { before: [], after: [], i: -1 };
+}
+
+const logs = [
+  "error at line 10",
+  "warning at line 15",
+  "the dev who wrote line 21 should be fired",
+  "debug info",
+  "error at line 20",
+  "user login",
+];
+
+const slug = "debug";
+
+console.log(splitLogs(logs, slug));
+
+// Destructure ************************************************************************************
+console.clear();
+// We can unpack values from arrays in locations that receive data
+//eg.
+
+function validateSum([a, b, c]) {
+  return a + b === c;
+}
+const sumTest = [5, 3, 8];
+console.log(validateSum(sumTest));
+
+function powerOf2([a, b, c]) {
+  return [Math.pow(a, 2), Math.pow(b, 2), Math.pow(c, 2)];
+}
+const [num1, num2, num3] = powerOf2([4, 5, 6]);
+console.log(`num1: ${num1} ; num2: ${num2} ; num3: ${num3}`);
+
+/**
+ * Assignment
+Textio maintains a list of messages to send to users. Complete the getPrimaryAndBackupMessages function by using array destructuring.
+
+The function takes an array of messages as input, and returns an object with two properties:
+
+primary: the first message in the array.
+backups: an array containing all the remaining messages (if any).
+If the array is empty, return an object with primary set to undefined and backups set to an empty array.
+ */
+
+function getPrimaryAndBackupMessages(messages) {
+  const [primary, ...backups] = messages;
+
+  return messages.length > 0
+    ? { primary, backups }
+    : { primary: undefined, backups: [] };
+}
+
+const messages = [
+  "Welcome to Textio!",
+  "Your order has shipped",
+  "Reminder: Payment due soon",
+];
+
+const messages2 = [];
+
+console.log(getPrimaryAndBackupMessages(messages2));
