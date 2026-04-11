@@ -103,3 +103,8 @@ My goal is to become a fullstack developer and be employable before the end of 2
 - intersection method
 - difference method
 - union method
+
+### Chapter eleventh - Maps
+
+- map keys
+- map vs. object
