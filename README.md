@@ -96,3 +96,10 @@ My goal is to become a fullstack developer and be employable before the end of 2
 - handling errors (try/catch)
 - finally block
 - throwing errors
+
+### Chapter tenth - Sets
+
+- sets
+- intersection method
+- difference method
+- union method
