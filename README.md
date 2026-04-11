@@ -90,3 +90,9 @@ My goal is to become a fullstack developer and be employable before the end of 2
 - for...of loops
 - slicing arrays
 - destructure
+
+### Chapter ninth - Errors
+
+- handling errors (try/catch)
+- finally block
+- throwing errors
