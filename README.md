@@ -108,3 +108,11 @@ My goal is to become a fullstack developer and be employable before the end of 2
 
 - map keys
 - map vs. object
+
+### Chapter twelfth - Promises
+
+- synchronous vs asynchronous
+- promises
+- .then / .catch methods
+- await keyword
+- async keyword
