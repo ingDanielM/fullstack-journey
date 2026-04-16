@@ -116,3 +116,12 @@ My goal is to become a fullstack developer and be employable before the end of 2
 - .then / .catch methods
 - await keyword
 - async keyword
+
+### Chapter fourteenth - The Event Loop
+
+- single Threaded
+- non blocking
+- the call stack
+- task queue
+- microtask queue
+- concurrency

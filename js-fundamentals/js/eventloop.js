@@ -89,8 +89,7 @@ function finalizeJob(success, messages) {
   const msg = success
     ? `Processed ${messages} successfully!`
     : `Failed to process messages!`;
-    console.log(msg);
-
+  console.log(msg);
 }
 
 // don't touch below this line
@@ -107,11 +106,10 @@ await sleep(0);
 console.log("---");
 processMessages(9001);
 
-
 // Microtask Queue **********************************************************************************************************
 setTimeout(() => {
   console.clear();
-}, 0)
+}, 0);
 // The microtask queue stores high-priority async callbacks (like Promises).
 // All microtasks are executed before tasks in the task queue,
 // as soon as the call stack is empty.
@@ -137,8 +135,7 @@ async function processAnalytics(data) {
 
     // ?
 
-    Promise.resolve()
-      .then(() => analysis += `- Processing: ${data}`);
+    Promise.resolve().then(() => (analysis += `- Processing: ${data}`));
 
     // don't touch below this line
 
@@ -146,5 +143,13 @@ async function processAnalytics(data) {
   });
 }
 
-let analyticsResult = await processAnalytics("Excuse me can I talk to you for a minute");
+let analyticsResult = await processAnalytics(
+  "Excuse me can I talk to you for a minute"
+);
 console.log(analyticsResult);
+
+// Concurrency **********************************************************************************************************
+// JavaScript is single-threaded, but achieves concurrency by delegating tasks
+// to external APIs (like Web APIs or Node APIs).
+// These APIs run tasks in the background and push the results to the task queue
+// once completed.
