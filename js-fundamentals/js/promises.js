@@ -138,24 +138,24 @@ CURRENTSTATUS is replaced with the value of the currentStatus parameter.
 console.clear();
 // The await keyword is used to wait for a promise to resolve
 
-async function dataLoad() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve("Datos cargados correctamente");
-    }, 1000);
-  });
-}
-async function dataStatus() {
-  console.log("Cargando datos...");
-  return await dataLoad();
-}
+// async function dataLoad() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve("Datos cargados correctamente");
+//     }, 1000);
+//   });
+// }
+// async function dataStatus() {
+//   console.log("Cargando datos...");
+//   return await dataLoad();
+// }
 
-try {
-  let message = await dataStatus();
-  console.log(message);
-} catch (err) {
-  console.error(err);
-}
+// try {
+//   let message = await dataStatus();
+//   console.log(message);
+// } catch (err) {
+//   console.error(err);
+// }
 
 /**
  * Assignment
@@ -170,33 +170,33 @@ Then on line 2, await the returned promise and save the resolved value in a vari
 
 For extra difficulty, try combining lines 1 and 2 into one line by awaiting the output of updateMessageStatus.
  */
-let message = await updateMessageStatus("M123", "Sending", true);
+// let message = await updateMessageStatus("M123", "Sending", true);
 
-// don't touch below this line
+// // don't touch below this line
 
-console.log(message);
+// console.log(message);
 
-function updateMessageStatus(messageId, currentStatus, isDelivered) {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      if (currentStatus === "Sending") {
-        if (isDelivered) {
-          resolve(
-            `Textio Message ${messageId} has been delivered successfully.`,
-          );
-        } else {
-          reject(
-            `Textio Message ${messageId} is still sending and cannot be marked as delivered.`,
-          );
-        }
-      } else {
-        resolve(
-          `Textio Message ${messageId} status updated to ${currentStatus}.`,
-        );
-      }
-    }, 1000);
-  });
-}
+// function updateMessageStatus(messageId, currentStatus, isDelivered) {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       if (currentStatus === "Sending") {
+//         if (isDelivered) {
+//           resolve(
+//             `Textio Message ${messageId} has been delivered successfully.`,
+//           );
+//         } else {
+//           reject(
+//             `Textio Message ${messageId} is still sending and cannot be marked as delivered.`,
+//           );
+//         }
+//       } else {
+//         resolve(
+//           `Textio Message ${messageId} status updated to ${currentStatus}.`,
+//         );
+//       }
+//     }, 1000);
+//   });
+// }
 
 // Async keyword **************************************************************************************************************************************************
 console.clear();
