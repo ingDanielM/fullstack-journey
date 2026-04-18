@@ -113,7 +113,7 @@ My goal is to become a fullstack developer and be employable before the end of 2
 
 - synchronous vs asynchronous
 - promises
-- .then / .catch methods
+- .then() & .catch() methods
 - await keyword
 - async keyword
 
@@ -125,3 +125,11 @@ My goal is to become a fullstack developer and be employable before the end of 2
 - task queue
 - microtask queue
 - concurrency
+
+### Chapter fifteenth - Runtimes
+
+- node.js
+- npm
+- DOM
+- ECMAScript
+- polyfills & transpilers
