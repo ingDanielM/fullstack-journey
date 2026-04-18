@@ -6,9 +6,9 @@ console.clear();
 //eg
 
 // Synchronous code
-console.log("first line");
-console.log("second line");
-console.log("third line");
+// console.log("first line");
+// console.log("second line");
+// console.log("third line");
 // this lines are printed in order: first line, second line, third line
 
 // Asynchronous code
@@ -35,10 +35,10 @@ Textio setup complete!
 The time to set up a project is 2 seconds, so make sure none of the wait times are greater than 2000 ms.
  */
 
-const textioSetupCompleteWait = 300;
-const errorHandlingWait = 200;
-const messageRoutingWait = 100;
-const smsProvidersWait = 0;
+// const textioSetupCompleteWait = 300;
+// const errorHandlingWait = 200;
+// const messageRoutingWait = 100;
+// const smsProvidersWait = 0;
 
 // don't touch below this line
 
@@ -211,22 +211,22 @@ Update the getMessageHash() function so that it can properly await the promise.
 Remember: The sha256Hex is an async function, meaning it returns a Promise and we should await it.
  */
 
-async function getMessageHash(sender, content) {
-  const hash = await sha256Hex(content);
-  return `Sender (${sender}): ${hash}`;
-}
+// async function getMessageHash(sender, content) {
+//   const hash = await sha256Hex(content);
+//   return `Sender (${sender}): ${hash}`;
+// }
 
 // don't touch below this line
 
-async function sha256Hex(str) {
-  const encoder = new TextEncoder();
-  const data = encoder.encode(str);
-  const hashBuffer = await crypto.subtle.digest("SHA-256", data);
-  const hashArray = Array.from(new Uint8Array(hashBuffer));
-  const hex = hashArray.map((b) => b.toString(16).padStart(2, "0")).join("");
-  return hex;
-}
+// async function sha256Hex(str) {
+//   const encoder = new TextEncoder();
+//   const data = encoder.encode(str);
+//   const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+//   const hashArray = Array.from(new Uint8Array(hashBuffer));
+//   const hex = hashArray.map((b) => b.toString(16).padStart(2, "0")).join("");
+//   return hex;
+// }
 
-const sender = "Ballan";
-const content = "So what are we having for lunch?";
-console.log(await getMessageHash(sender, content));
+// const sender = "Ballan";
+// const content = "So what are we having for lunch?";
+// console.log(await getMessageHash(sender, content));
