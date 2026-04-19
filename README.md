@@ -117,7 +117,7 @@ My goal is to become a fullstack developer and be employable before the end of 2
 - await keyword
 - async keyword
 
-### Chapter fourteenth - The Event Loop
+### Chapter thirteenth - The Event Loop
 
 - single Threaded
 - non blocking
@@ -126,10 +126,21 @@ My goal is to become a fullstack developer and be employable before the end of 2
 - microtask queue
 - concurrency
 
-### Chapter fifteenth - Runtimes
+### Chapter fourteenth - Runtimes
 
 - node.js
 - npm
 - DOM
 - ECMAScript
 - polyfills & transpilers
+
+### Chapter fifteenth - Runtimes
+
+- modules
+- commonJS
+- strict mode
+- ES6 modules
+- node.js modules
+- browser modules
+- default exports
+- bundlers
