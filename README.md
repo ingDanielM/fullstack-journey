@@ -134,7 +134,7 @@ My goal is to become a fullstack developer and be employable before the end of 2
 - ECMAScript
 - polyfills & transpilers
 
-### Chapter fifteenth - Runtimes
+### Chapter fifteenth - Modules
 
 - modules
 - commonJS
