@@ -24,3 +24,39 @@ Requirements:
 // 5. Consume the same function using async/await and try/catch.
 // 6. Test it with an existing ID and with a non-existing ID.
  */
+
+const tickets = [
+  { id: 1, user: "John", issue: "VPN not connecting" },
+  { id: 2, user: "Maria", issue: "Outlook not opening" },
+  { id: 3, user: "Carlos", issue: "Password reset required" },
+];
+
+function fetchTicketById(id) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      const ticketFound = tickets.find((tkt) => tkt.id === id);
+      if (ticketFound) resolve(ticketFound);
+      else reject(new Error(`Error! Ticket #${id} was not found.`));
+    }, 1000);
+  });
+}
+
+fetchTicketById(0)
+  .then((res) => console.log(".then/catch success: ", res))
+  .catch((err) => console.log(".then/catch error: ", err.message));
+
+fetchTicketById(1)
+  .then((res) => console.log(".then/catch success: ", res))
+  .catch((err) => console.log(".then/catch error: ", err.message));
+
+async function getTicketById(id) {
+  try {
+    const res = await fetchTicketById(id);
+    console.log("async/await success: ", res);
+  } catch (err) {
+    console.log("async/await error: ", err.message);
+  }
+}
+
+getTicketById(0);
+getTicketById(2);
